@@ -225,7 +225,32 @@ nav a:hover {
 .Second_block {
     height:45vh;
     display:flex;
-    border:1px solid red;
+    flex-wrap:wrap;
+}
+
+.first_foot {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    font-size:0.9em;
+}
+
+.intro_first_foot {
+    width:100%;
+    text-align:center;
+}
+
+.intro_first_foot p {
+    text-align:justify;
+}
+
+.left_column_first_foot, .middle_column_first_foot, .right_column_first_foot {
+    width:60vh;
+    margin-left:auto;
+}
+
+.first_foot a {
+    color:black;
 }
 /* ==========================================================================
    Helper classes
