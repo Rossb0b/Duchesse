@@ -16,6 +16,10 @@ html {
     line-height: 1.4;
 }
 
+html, body {
+    margin:0;
+    padding:0;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -95,24 +99,134 @@ textarea {
 
 /* ==========================================================================
    Author's custom styles
-   ========================================================================== */
+   ================================================================================= */
+
+* {
+    color:#777777;
+    text-decoration:none;
+    list-style:none;
+    line-height:1.7em;
+}
+
+/* ===========================================================  HEADER ================================================================= */
 
 
+header {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    height:18vh;
+    width:100%;
+    background-color:lightgrey;
+}
 
+.left_top_header a {
+    margin-left:2vh;
+    color:#444;
 
+}
 
+.left_top_header a:hover {
+    background-color:#777;
+    border-radius:2px;
+}
 
+.img_archi_header {
+    height:18vh;
+    width:30vh;
+}
 
+.right_top_header {
+    display:flex;
+    flex-direction:row;
+}
 
+.logo_header {
+    width:8vh;
+    height:8vh;
+}
 
+.shop, .basket {
+    margin-left:3vh;
+    width:14vh;
+    text-align:center;
+}
 
+.basket {
+    background-color:#777;
+}
 
+.basket p {
+    color:#444;
+}
 
+.Welcome_lang, .left_top_header {
+    font-size:0.8em;
+}
 
+.Welcome_lang a {
+    margin-right:2vh;
+}
 
+.Welcome_lang a:hover {
+    color:black;
+    opacity:0.8;
+}
 
+/* ================================================================= NAV MENU ================================================================= */
 
+nav {
+    height:6vh;
+    width:98%;
+    margin-left:1vh;
+    margin-bottom:5vh;
+    margin-top:2vh;
+    border-bottom:0.8px solid grey;
+}
 
+nav a {
+    font-style:italic;
+    color:black;
+    font-size:1.1em;
+    margin-left:1.5vh;
+}
+
+nav a:hover {
+    color:#777;
+}
+
+/* =============================================================== Main Block =================================================================== */
+
+.first_block, .Product_block {
+    display:flex;
+    flex-direction:row;
+}
+
+.article {
+    display:flex;
+    flex-direction:column;
+}
+
+.article img {
+    height:65vh;
+    width:65vh;
+}
+
+.Product_block {
+    flex-wrap:wrap;
+}
+
+.product {
+    margin-left:4vh;
+    height:25vh;
+    width:25vh;
+}
+
+.Second_block {
+    height:45vh;
+    display:flex;
+    border:1px solid red;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
