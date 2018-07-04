@@ -115,7 +115,7 @@ header {
     display:flex;
     flex-direction:row;
     justify-content:space-between;
-    height:18vh;
+    height:20vh;
     width:100%;
     background-color:lightgrey;
 }
@@ -153,9 +153,15 @@ header {
     height:8vh;
 }
 
+.icon_header {
+    padding-top:2vh;
+    width:40px;
+    height:40px;
+}
+
 .shop, .basket {
     margin-left:3vh;
-    width:14vh;
+    width:16vh;
     text-align:center;
 }
 
@@ -208,7 +214,7 @@ nav a:hover {
     display:flex;
     flex-direction:row;
     text-align:center;
-    font-size:0.9em;
+    font-size:0.85em;
 }
 
 .article {
@@ -218,11 +224,46 @@ nav a:hover {
 }
 
 .article img {
-    height:65vh;
-    width:65vh;
+    width:58vh;
+    margin-bottom:4vh;
+}
+
+#article_title {
+    text-align:center;
+    width:29vh;
+    color:black;
+    background-color:lightgrey;
+    border-radius:2px;
+}
+
+#article_title:hover {
+    background-color:grey;
+}
+
+#article_desc {
+    margin:2vh 0 2vh 0;
+    color:black;
+    font-size:4vh;
+}
+
+#article_desc:hover {
+    color:grey;
+}
+
+#discover_input {
+    text-align:center;
+    border-radius:2px;
+    color:white;
+    background-color:grey;
+    width:13vh;
+}
+
+#discover_input:hover {
+    background-color:black;
 }
 
 .Product_block {
+    margin-right:4.5vh;
     flex-wrap:wrap;
 }
 
@@ -230,6 +271,11 @@ nav a:hover {
     margin-left:4vh;
     height:25vh;
     width:25vh;
+    min-width:0vh;
+}
+
+.product img {
+    width:30vh;
 }
 
 .border_items p {
@@ -242,12 +288,17 @@ nav a:hover {
 }
 
 .Second_block {
+    margin-top:14vh;
     height:45vh;
     display:flex;
     flex-wrap:wrap;
+    justify-content:space-around;
 }
 
 .first_foot {
+    margin:auto;
+    width:99%;
+    border-top:1px solid grey;
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
@@ -327,6 +378,7 @@ textarea {
     height:7vh;
     width:7vh;
 }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -412,6 +464,26 @@ textarea {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+@media all and (max-height:530px) {
+    .Second_block {
+        display:none;
+    }
+}
+
+@media all and (max-width:1100px) {
+    .Second_block {
+        display:none;
+    }
+    .second_foot {
+        font-size:0.7em;
+    }
+}
+
+@media all and (max-width:900px) {
+
+}
+
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
