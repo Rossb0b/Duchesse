@@ -119,11 +119,14 @@ header {
     width:100%;
     background-color:lightgrey;
 }
+                        /* =============================== Left-top-header =============================== */
+.left_top_header {
+    margin-top:-0.5vh;
+}
 
 .left_top_header a {
     margin-left:2vh;
     color:#444;
-
 }
 
 .left_top_header a:hover {
@@ -131,10 +134,14 @@ header {
     border-radius:2px;
 }
 
+                        /* ============================== Middle-header ================================ */
+
 .img_archi_header {
     height:18vh;
     width:30vh;
 }
+
+                        /* ============================== Right-top-header =============================== */
 
 .right_top_header {
     display:flex;
@@ -200,10 +207,13 @@ nav a:hover {
 .first_block, .Product_block {
     display:flex;
     flex-direction:row;
+    text-align:center;
+    font-size:0.9em;
 }
 
 .article {
     display:flex;
+    text-align:left;
     flex-direction:column;
 }
 
@@ -220,6 +230,15 @@ nav a:hover {
     margin-left:4vh;
     height:25vh;
     width:25vh;
+}
+
+.border_items p {
+    border-bottom:1px solid black;
+    border-radius:1px;
+}
+
+.second_block p, .Product_block p {
+    margin-left:2vh;
 }
 
 .Second_block {
@@ -251,6 +270,62 @@ nav a:hover {
 
 .first_foot a {
     color:black;
+}
+
+
+
+
+.bottom_first_foot {
+    margin-top:5vh;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    justify-content:space-around;
+    width:100%;
+    opacity:0.7;
+}
+
+.bottom_first_foot img {
+    height:15vh;
+    width:15vh;
+    margin-left:3.4vh;
+}
+
+.bottom_first_foot p {
+    text-align:center;
+}
+
+
+
+.second_foot {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    background-color:lightgrey;
+}
+
+.second_foot p, .second_foot li {
+    font-size:0.8em;
+    text-align:left;
+}
+
+.second_foot li {
+    margin-left:-4vh;
+}
+.first_column_second_foot img {
+    height:20vh;
+    width:40vh;
+}
+
+textarea {
+    height:3.5vh;
+}
+
+.icons img {
+    margin-top:3vh;
+    height:7vh;
+    width:7vh;
 }
 /* ==========================================================================
    Helper classes
