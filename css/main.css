@@ -16,6 +16,10 @@ html {
     line-height: 1.4;
 }
 
+html, body {
+    margin:0;
+    padding:0;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -95,24 +99,265 @@ textarea {
 
 /* ==========================================================================
    Author's custom styles
-   ========================================================================== */
+   ================================================================================= */
+
+* {
+    color:#777777;
+    text-decoration:none;
+    list-style:none;
+    line-height:1.7em;
+}
+
+
+/* ===========================================================  HEADER ================================================================= */
+
+
+header {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    height:20vh;
+    width:100%;
+    background-color:lightgrey;
+}
 
 
 
+                        /* ============================== Middle-header ================================ */
 
 
+.img_archi_header {
+    height:18vh;
+    width:30vh;
+}
 
 
+                        /* ============================== Right-top-header =============================== */
 
 
+.right_top_header {
+    display:flex;
+    flex-direction:row;
+}
+
+.logo_header {
+    width:8vh;
+    height:8vh;
+}
+
+.icon_header {
+    padding-top:2vh;
+    width:40px;
+    height:40px;
+}
+
+.shop, .basket {
+    margin-left:3vh;
+    width:16vh;
+    text-align:center;
+}
+
+.basket {
+    background-color:#777;
+}
+
+.basket p {
+    color:#444;
+}
+
+.Welcome_lang, .left_top_header {
+    font-size:0.8em;
+}
+
+.Welcome_lang a {
+    margin-right:2vh;
+}
+
+.Welcome_lang a:hover {
+    color:black;
+    opacity:0.8;
+}
 
 
+/* =============================================================== Main Block =================================================================== */
+
+.Product_block {
+    display:flex;
+    flex-direction:row;
+    text-align:center;
+    font-size:0.85em;
+}
 
 
+                 /* ======================================== Left-content/article ========================================== */
 
 
+.article {
+    display:flex;
+    text-align:left;
+    flex-direction:column;
+}
+
+#article_title {
+    text-align:center;
+    color:black;
+    background-color:lightgrey;
+    border-radius:2px;
+}
+
+#article_title:hover {
+    background-color:grey;
+}
+
+#article_desc {
+    margin:2vh 0 2vh 0;
+    color:black;
+    font-size:4vh;
+}
+
+#article_desc:hover {
+    color:grey;
+}
+
+#discover_input {
+    text-align:center;
+    border-radius:2px;
+    color:white;
+    background-color:grey;
+    width:20vh;
+}
+
+#discover_input:hover {
+    background-color:black;
+}
 
 
+                            /* ===================================== First list products ================================== */
+
+
+.Product_block {
+    margin-right:4.5vh;
+    flex-wrap:wrap;
+}
+
+.product {
+    margin-left:4vh;
+    height:25vh;
+    width:25vh;
+    min-width:0vh;
+}
+
+.product img {
+    width:30vh;
+}
+
+.border_items p {
+    border-bottom:1px solid black;
+    border-radius:1px;
+}
+
+.Product_block p {
+    margin-left:2vh;
+}
+
+.Second_block {
+    display:none;
+}
+
+
+/* ========================================================= Footer ====================================================================== */
+
+
+.first_foot {
+    margin:auto;
+    width:99%;
+    border-top:1px solid grey;
+    font-size:0.9em;
+}
+
+
+                        /* ============================ Column text foot ================================== */ 
+
+
+.intro_first_foot {
+    width:100%;
+    text-align:center;
+}
+
+.intro_first_foot p {
+    text-align:justify;
+}
+
+.left_column_first_foot, .middle_column_first_foot, .right_column_first_foot {
+    margin-left:auto;
+}
+
+.first_foot a {
+    color:black;
+}
+
+
+                            /* ================================ Img footer ================================= */
+
+
+.bottom_first_foot {
+    margin-top:5vh;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    justify-content:space-around;
+    width:100%;
+    opacity:0.7;
+}
+
+.bottom_first_foot img {
+    height:15vh;
+    width:15vh;
+    margin-left:3.4vh;
+}
+
+.bottom_first_foot p {
+    text-align:center;
+    word-wrap:break-word;
+}
+
+
+/* ========================================================= Second footer ================================================================= */
+
+
+.second_foot {
+    background-color:lightgrey;
+}
+
+.second_foot p, .second_foot li {
+    font-size:0.8em;}
+
+.second_foot li {
+    margin-left:-4vh;
+}
+
+
+                            /* ================================== ArchiDuchesse img =============================== */
+
+
+.first_column_second_foot img {
+    height:20vh;
+    width:40vh;
+}
+
+textarea {
+    height:3.5vh;
+}
+
+
+                            /* ==================================== Media icons ===================================== */
+
+
+.icons img {
+    margin-top:3vh;
+    height:7vh;
+    width:7vh;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -121,9 +366,6 @@ textarea {
  * Hide visually and from screen readers
  */
 
-.hidden {
-    display: none !important;
-}
 
 /*
  * Hide only visually, but have it available for screen readers:
@@ -198,6 +440,191 @@ textarea {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+/* ====================================================================================================================================================
+                                                                MEDIA CELLPHONE
+===================================================================================================================================================== */                                                            
+@media all and (max-width:980px) {
+    .left_top_header, .Welcome_lang, .shop, nav, .article img {
+        display:none;
+    }
+
+    .hidden {
+        display:block;
+    }
+
+    .hidden img {
+        height:8vh;
+        width:8vh;
+    }
+
+    .first_block {
+        display:flex;
+        flex-direction:column;
+    }
+
+    .product {
+        margin:auto;
+        margin-bottom:30vh;
+    }
+
+    .first_foot {
+        display:block;
+    }
+
+    .first_foot h2, .first_foot p {
+        text-align:left;
+        margin:auto;
+    }
+
+    .first_foot h2 {
+        margin-bottom:4vh;
+    }
+
+    .left_column_first_foot, .middle_column_first_foot, .right_column_first_foot {
+        margin:auto;
+        margin-top:5vh;
+    }
+
+    .bottom_first_foot {
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+    }
+
+    .second_foot {
+        display:flex;
+        flex-direction:column;
+        margin:auto;   
+    }
+
+    .second_foot div {
+        width:60%;
+        margin:auto;
+    }
+
+    .icons {
+        display:flex;
+        flex-direction:row;
+        flex-wrap:nowrap;
+        margin:auto;
+    }
+
+    .hidden_li {
+        display:none;
+    }
+
+    #article_title {
+        margin-top:2vh;
+        width:40vh;
+        font-size:0.8em;
+    }
+
+    #discover_input {
+        margin-bottom:2vh;
+    }
+}
+
+/* =================================================== Fix second_block issues with height ======================================================= */
+
+@media all and (max-height:530px) {
+    .Second_block {
+        display:none;
+    }
+}
+
+/* ====================================================================================================================================================
+                                                                MEDIA DESKTOP                               
+==================================================================================================================================================== */
+
+@media all and (min-width:981px){
+    .first_block {
+        display:flex;
+        flex-direction:row;
+    }  
+
+                            /* =============================== Left-top-header =============================== */
+
+    .hidden {
+        display:none;
+    }   
+
+    .left_top_header {
+        margin-top:-0.5vh;
+    }
+
+    .left_top_header a {
+        margin-left:2vh;
+        color:#444;
+    }
+
+    .left_top_header a:hover {
+        background-color:#777;
+        border-radius:2px;
+    } 
+
+    /* ================================================================= NAV MENU ================================================================= */
+
+
+    nav {
+        height:6vh;
+        width:98%;
+        margin-left:1vh;
+        margin-bottom:5vh;
+        margin-top:2vh;
+        border-bottom:0.8px solid grey;
+    }
+
+    nav a {
+        font-style:italic;
+        color:black;
+        font-size:1.1em;
+        margin-left:1.5vh;
+    }
+
+    nav a:hover {
+        color:#777;
+    }
+
+    .article img {
+    width:58vh;
+    margin-bottom:4vh; 
+    }
+
+    .Second_block {  
+    margin-top:14vh;
+    height:45vh;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    }
+
+    .first_foot {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    }
+
+    .left_column_first_foot, .middle_column_first_foot, .right_column_first_foot {
+    width:60vh;
+    }
+
+    .second_foot {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    }
+
+    #article_title {
+        width:29vh;
+    }
+}
+
+@media all and (max-width:900px) {
+
+}
+
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
