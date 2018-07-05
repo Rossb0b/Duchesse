@@ -108,6 +108,7 @@ textarea {
     line-height:1.7em;
 }
 
+
 /* ===========================================================  HEADER ================================================================= */
 
 
@@ -119,29 +120,20 @@ header {
     width:100%;
     background-color:lightgrey;
 }
-                        /* =============================== Left-top-header =============================== */
-.left_top_header {
-    margin-top:-0.5vh;
-}
 
-.left_top_header a {
-    margin-left:2vh;
-    color:#444;
-}
 
-.left_top_header a:hover {
-    background-color:#777;
-    border-radius:2px;
-}
 
                         /* ============================== Middle-header ================================ */
+
 
 .img_archi_header {
     height:18vh;
     width:30vh;
 }
 
+
                         /* ============================== Right-top-header =============================== */
+
 
 .right_top_header {
     display:flex;
@@ -186,36 +178,19 @@ header {
     opacity:0.8;
 }
 
-/* ================================================================= NAV MENU ================================================================= */
-
-nav {
-    height:6vh;
-    width:98%;
-    margin-left:1vh;
-    margin-bottom:5vh;
-    margin-top:2vh;
-    border-bottom:0.8px solid grey;
-}
-
-nav a {
-    font-style:italic;
-    color:black;
-    font-size:1.1em;
-    margin-left:1.5vh;
-}
-
-nav a:hover {
-    color:#777;
-}
 
 /* =============================================================== Main Block =================================================================== */
 
-.first_block, .Product_block {
+.Product_block {
     display:flex;
     flex-direction:row;
     text-align:center;
     font-size:0.85em;
 }
+
+
+                 /* ======================================== Left-content/article ========================================== */
+
 
 .article {
     display:flex;
@@ -223,14 +198,8 @@ nav a:hover {
     flex-direction:column;
 }
 
-.article img {
-    width:58vh;
-    margin-bottom:4vh;
-}
-
 #article_title {
     text-align:center;
-    width:29vh;
     color:black;
     background-color:lightgrey;
     border-radius:2px;
@@ -255,12 +224,16 @@ nav a:hover {
     border-radius:2px;
     color:white;
     background-color:grey;
-    width:13vh;
+    width:20vh;
 }
 
 #discover_input:hover {
     background-color:black;
 }
+
+
+                            /* ===================================== First list products ================================== */
+
 
 .Product_block {
     margin-right:4.5vh;
@@ -283,27 +256,28 @@ nav a:hover {
     border-radius:1px;
 }
 
-.second_block p, .Product_block p {
+.Product_block p {
     margin-left:2vh;
 }
 
 .Second_block {
-    margin-top:14vh;
-    height:45vh;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:space-around;
+    display:none;
 }
+
+
+/* ========================================================= Footer ====================================================================== */
+
 
 .first_foot {
     margin:auto;
     width:99%;
     border-top:1px solid grey;
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
     font-size:0.9em;
 }
+
+
+                        /* ============================ Column text foot ================================== */ 
+
 
 .intro_first_foot {
     width:100%;
@@ -315,7 +289,6 @@ nav a:hover {
 }
 
 .left_column_first_foot, .middle_column_first_foot, .right_column_first_foot {
-    width:60vh;
     margin-left:auto;
 }
 
@@ -324,6 +297,7 @@ nav a:hover {
 }
 
 
+                            /* ================================ Img footer ================================= */
 
 
 .bottom_first_foot {
@@ -344,26 +318,28 @@ nav a:hover {
 
 .bottom_first_foot p {
     text-align:center;
+    word-wrap:break-word;
 }
 
 
+/* ========================================================= Second footer ================================================================= */
+
 
 .second_foot {
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    justify-content:space-between;
     background-color:lightgrey;
 }
 
 .second_foot p, .second_foot li {
-    font-size:0.8em;
-    text-align:left;
-}
+    font-size:0.8em;}
 
 .second_foot li {
     margin-left:-4vh;
 }
+
+
+                            /* ================================== ArchiDuchesse img =============================== */
+
+
 .first_column_second_foot img {
     height:20vh;
     width:40vh;
@@ -373,12 +349,15 @@ textarea {
     height:3.5vh;
 }
 
+
+                            /* ==================================== Media icons ===================================== */
+
+
 .icons img {
     margin-top:3vh;
     height:7vh;
     width:7vh;
 }
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -387,9 +366,6 @@ textarea {
  * Hide visually and from screen readers
  */
 
-.hidden {
-    display: none !important;
-}
 
 /*
  * Hide only visually, but have it available for screen readers:
@@ -465,18 +441,183 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
+/* ====================================================================================================================================================
+                                                                MEDIA CELLPHONE
+===================================================================================================================================================== */                                                            
+@media all and (max-width:940px) {
+    .left_top_header, .Welcome_lang, .shop, nav, .article img {
+        display:none;
+    }
+
+    .hidden {
+        display:block;
+    }
+
+    .hidden img {
+        height:8vh;
+        width:8vh;
+    }
+
+    .first_block {
+        display:flex;
+        flex-direction:column;
+    }
+
+    .product {
+        margin:auto;
+        margin-bottom:30vh;
+    }
+
+    .first_foot {
+        display:block;
+    }
+
+    .first_foot h2, .first_foot p {
+        text-align:left;
+        margin:auto;
+    }
+
+    .first_foot h2 {
+        margin-bottom:4vh;
+    }
+
+    .left_column_first_foot, .middle_column_first_foot, .right_column_first_foot {
+        margin:auto;
+        margin-top:5vh;
+    }
+
+    .bottom_first_foot {
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+    }
+
+    .second_foot {
+        display:flex;
+        flex-direction:column;
+        margin:auto;   
+    }
+
+    .second_foot div {
+        width:60%;
+        margin:auto;
+    }
+
+    .icons {
+        display:flex;
+        flex-direction:row;
+        flex-wrap:nowrap;
+        margin:auto;
+    }
+
+    .hidden_li {
+        display:none;
+    }
+
+    #article_title {
+        margin-top:2vh;
+        width:40vh;
+        font-size:0.8em;
+    }
+
+    #discover_input {
+        margin-bottom:2vh;
+    }
+}
+
+/* =================================================== Fix second_block issues with height ======================================================= */
+
 @media all and (max-height:530px) {
     .Second_block {
         display:none;
     }
 }
 
-@media all and (max-width:1100px) {
-    .Second_block {
+/* ====================================================================================================================================================
+                                                                MEDIA DESKTOP                               
+==================================================================================================================================================== */
+
+@media all and (min-width:941px){
+    .first_block {
+        display:flex;
+        flex-direction:row;
+    }  
+
+                            /* =============================== Left-top-header =============================== */
+
+    .hidden {
         display:none;
+    }   
+
+    .left_top_header {
+        margin-top:-0.5vh;
     }
+
+    .left_top_header a {
+        margin-left:2vh;
+        color:#444;
+    }
+
+    .left_top_header a:hover {
+        background-color:#777;
+        border-radius:2px;
+    } 
+
+    /* ================================================================= NAV MENU ================================================================= */
+
+
+    nav {
+        height:6vh;
+        width:98%;
+        margin-left:1vh;
+        margin-bottom:5vh;
+        margin-top:2vh;
+        border-bottom:0.8px solid grey;
+    }
+
+    nav a {
+        font-style:italic;
+        color:black;
+        font-size:1.1em;
+        margin-left:1.5vh;
+    }
+
+    nav a:hover {
+        color:#777;
+    }
+
+    .article img {
+    width:58vh;
+    margin-bottom:4vh; 
+    }
+
+    .Second_block {  
+    margin-top:14vh;
+    height:45vh;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    }
+
+    .first_foot {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    }
+
+    .left_column_first_foot, .middle_column_first_foot, .right_column_first_foot {
+    width:60vh;
+    }
+
     .second_foot {
-        font-size:0.7em;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    }
+
+    #article_title {
+        width:29vh;
     }
 }
 
