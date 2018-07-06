@@ -101,6 +101,13 @@ textarea {
    Author's custom styles
    ================================================================================= */
 
+/* ===================================================================================================================================================
+                                                                General proprieties
+======================================================================================================================================================
+                                                                For Index principaly
+==================================================================================================================================================== */                                                                                                                                    
+
+
 * {
     color:#777777;
     text-decoration:none;
@@ -179,7 +186,7 @@ header {
 }
 
 
-/* =============================================================== Main Block =================================================================== */
+/* =============================================================== Main Block ================================================================ */
 
 .Product_block {
     display:flex;
@@ -358,6 +365,69 @@ textarea {
     height:7vh;
     width:7vh;
 }
+
+/* ====================================================================================================================================================
+                                                                    For Blog page
+==================================================================================================================================================== */
+
+.blog_block {
+    width:96%;
+    margin:auto;
+}
+
+.news {
+    display:flex;
+    flex-direction:column;
+}
+
+.select_list {
+    display:none;
+}
+
+.head_news h3 {
+    margin-top:-1vh;
+}
+
+#Nbr_commentary:hover {
+    text-decoration:underline;
+    color:lightgrey;
+}
+
+.copyright {
+    margin-top:-4vh;
+    font-size:0.65em;
+}
+
+.rubrique {
+    font-size:0.7em;
+    border-radius:4px;
+    background-color:lightgrey;
+}
+
+
+.news p {
+    font-size:0.8em;
+}
+
+.Quote {
+    display:inline-block;
+    width:100%;
+    text-align:center;
+    margin:3vh 0 3vh 0;
+    color:black;
+    font-size:1.8em;
+    font-style:italic;
+    font-weight:bold;
+}
+
+.important {
+    font-weight:bold;
+}
+
+.news img {
+    height:60vh;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -442,9 +512,22 @@ textarea {
    ========================================================================== */
 
 /* ====================================================================================================================================================
+=======================================================================================================================================================
+                                                                    QUERIES !!!!!!!!!!!
+=======================================================================================================================================================
+==================================================================================================================================================== */                                                                    
+
+
+
+/* ====================================================================================================================================================
                                                                 MEDIA CELLPHONE
 ===================================================================================================================================================== */                                                            
 @media all and (max-width:980px) {
+
+    header {
+        background-color:white;
+    }
+
     .left_top_header, .Welcome_lang, .shop, nav, .article img {
         display:none;
     }
@@ -453,9 +536,13 @@ textarea {
         display:block;
     }
 
+    .img_archi_header {
+        margin-left:-12vh;
+    }
+
     .hidden img {
-        height:8vh;
-        width:8vh;
+        height:6vh;
+        width:6vh;
     }
 
     .first_block {
@@ -523,6 +610,22 @@ textarea {
     #discover_input {
         margin-bottom:2vh;
     }
+
+    /* ================================================================================================================================================
+                                                                Blog Modification
+    ================================================================================================================================================ */
+    
+    .blog_second_foot {
+        width:96%;
+    }
+
+    .blog_second_column_second_foot, .blog_third_column_second_foot, .blog_fourth_column_second_foot {
+        display:none;
+    }
+
+    .hidden_blog {
+        display:none;
+    }                                                         
 }
 
 /* =================================================== Fix second_block issues with height ======================================================= */
@@ -619,11 +722,83 @@ textarea {
     #article_title {
         width:29vh;
     }
+
+    /* ================================================================================================================================================
+                                                                    Blog Modification
+    ================================================================================================================================================ */
+
+    .blog_welcome {
+        display:none;
+    }
+
+    .blog_block {
+        display:flex;
+        flex-direction:row;
+        justify-content:space-around;
+    }
+
+    .news {
+        width:60%;
+    }
+
+    .select_list {
+        display:block;
+        margin-bottom:5vh;
+    }
+
+    .title {
+        font-weight:bold;
+        color:black;
+    }
+
+    .subtitle {
+        color:grey;
+        font-style:italic;
+        font-size:0.8em;
+    }
+
+    .select_list li {
+        font-size:0.9em;
+    }
+
+    .Category {
+        margin-bottom:5vh;
+    }
+
+    .header_select{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        margin-left:-10vh;
+        margin-bottom:-5vh;
+    }
+
+    .Category ul {
+        margin:auto;
+        margin-left:-5vh;
+    }    
+
+    .category_img, .archive_img, .blogroll_img {
+        height:10vh;
+        width:10vh;
+        background-repeat:no-repeat;
+        align-content:left;
+    }
+
+    .category_img {
+        background-image:url("../img/category.png");
+    }
+
+    .archive_img {
+        background-image:url("../img/hourglass.png");
+    }
+
+    .blogroll_img {
+        background-image:url("../img/heart.png");
+    }
 }
 
-@media all and (max-width:900px) {
 
-}
 
 
 @media only screen and (min-width: 35em) {
