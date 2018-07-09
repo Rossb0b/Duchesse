@@ -249,13 +249,15 @@ header {
 
 .product {
     margin-left:4vh;
-    height:25vh;
-    width:25vh;
+    height:22vh;
+    width:22vh;
     min-width:0vh;
 }
 
 .product img {
-    width:30vh;
+    height:18vh;
+    width:22vh;
+    margin:auto;
 }
 
 .border_items p {
@@ -721,6 +723,19 @@ textarea {
 
     #article_title {
         width:29vh;
+    }
+
+    @media all and (min-height:675px) {
+        .product img {
+            height:12vh;
+            width:20vh;
+        }
+    }
+
+    @media all and (max-width:1300px) {
+        .left_column_first_foot, .middle_column_first_foot, .right_column_first_foot {
+            width:45vh;
+        }       
     }
 
     /* ================================================================================================================================================
