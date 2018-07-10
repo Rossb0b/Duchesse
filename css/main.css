@@ -250,13 +250,12 @@ header {
 .product {
     margin-left:4vh;
     height:22vh;
-    width:22vh;
-    min-width:0vh;
+    width:10rem;
 }
 
 .product img {
     height:18vh;
-    width:22vh;
+    width:9rem;
     margin:auto;
 }
 
@@ -321,7 +320,7 @@ header {
 
 .bottom_first_foot img {
     height:15vh;
-    width:15vh;
+    width:7rem;
     margin-left:3.4vh;
 }
 
@@ -338,12 +337,18 @@ header {
     background-color:lightgrey;
 }
 
+
 .second_foot p, .second_foot li {
-    font-size:0.8em;}
+    font-size:0.7em;}
 
 .second_foot li {
-    margin-left:-4vh;
+    margin-left:-2rem;
 }
+
+.second_foot h2 {
+    font-size:1.2em;
+}
+
 
 
                             /* ================================== ArchiDuchesse img =============================== */
@@ -351,11 +356,12 @@ header {
 
 .first_column_second_foot img {
     height:20vh;
-    width:40vh;
+    width:18rem;
 }
 
 textarea {
     height:3.5vh;
+    max-width:15rem;
 }
 
 
@@ -365,7 +371,7 @@ textarea {
 .icons img {
     margin-top:3vh;
     height:7vh;
-    width:7vh;
+    width:3rem;
 }
 
 /* ====================================================================================================================================================
@@ -605,7 +611,7 @@ textarea {
 
     #article_title {
         margin-top:2vh;
-        width:40vh;
+        width:20rem;
         font-size:0.8em;
     }
 
@@ -692,7 +698,7 @@ textarea {
     }
 
     .article img {
-    width:58vh;
+    width:24rem;
     margin-bottom:4vh; 
     }
 
@@ -711,7 +717,7 @@ textarea {
     }
 
     .left_column_first_foot, .middle_column_first_foot, .right_column_first_foot {
-    width:60vh;
+    width:20rem;
     }
 
     .second_foot {
@@ -734,7 +740,7 @@ textarea {
 
     @media all and (max-width:1300px) {
         .left_column_first_foot, .middle_column_first_foot, .right_column_first_foot {
-            width:45vh;
+            width:18rem;
         }       
     }
 
@@ -812,8 +818,6 @@ textarea {
         background-image:url("../img/heart.png");
     }
 }
-
-
 
 
 @media only screen and (min-width: 35em) {
